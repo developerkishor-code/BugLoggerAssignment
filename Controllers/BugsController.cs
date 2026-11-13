@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace BugLogger.Controllers;
 
 [ApiController]
-[Route("bugs")]
-public class BugsController : ControllerBase
+[Route("api/v1/bugs")]
+public class BugLoggerController : ControllerBase
 {
     private readonly BugService _bugService;
 
-    public BugsController(BugService bugService)
+    public BugLoggerController(BugService bugService)
     {
         _bugService = bugService;
     }
